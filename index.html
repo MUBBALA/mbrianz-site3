@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+    <style type="text/css">
+    header, section, footer, aside, nav, article, figure, figcaption{ display:block; }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 100%;
+        margin: 0px;
+        /* background gradient at top of page, from http://www.colorzilla.com/gradient-editor/ */
+        background: -moz-linear-gradient(top,  #ffa853 0%, #fdf9bd 2%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa853),color-stop(2%,#fdf9bd));
+        background: -webkit-linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+        background: -o-linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+        background: -ms-linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+        background: linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa853', endColorstr='#fdf9bd',GradientType=0 );
+        background-repeat: repeat-x;
+        background-color: #fdf9bd; /* Old browsers */
+        margin: 0;
+    }
+
+    .wrapper{
+        width: 940px;
+        margin: 12px auto;
+        /*border: 2px solid #000; */
+        background-color: #fff;
+
+    }
+    header{
+        height: 130px;
+        background-color: rgb(244, 217, 96, .6);
+        padding: .1em .2em;
+        
+    }
+    header h1{
+        text-shadow: rgb(122, 111, 111, .2) .2em .2em .2em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0px 0px 0px 30px;
+        width: 300px;
+        
+    }
+    h1#logo{
+        background: url(images/logo3.png) no-repeat 0 -20px;
+        text-indent: 100%;
+        width: 300px;
+        height: 80px;
+        white-space: nowrap;
+        overflow: hidden;
+        background-size: cover;
+
+    }
+    /* link styles*/
+    a {
+        color: #de6581;
+        text-decoration: none;
+    }
+
+
+    
+a:link {
+    color: #C00;
+  }
+a:visited {
+    color: #921A66;
+  }
+a:focus {
+	color: #921A66;
+}
+a:hover {
+    color: #921A66;
+  }
+a:active {
+	color:#F00;
+}
+    nav,footer{
+        clear: both;
+        color: #fff;
+        background-color: #aeaca8;
+        height: 50px;
+    }
+    /*nav styles*/
+    nav{
+        overflow: hidden;
+        width: 100%;
+        margin: 0px;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 30em;
+
+    }
+    nav ul li{
+        float: left;
+        text-transform: uppercase;
+        font-weight: normal;
+
+    }
+    nav ul li a { 	
+        display: block; 	
+        padding: .5em; 	
+        border: 1px solid #ba89a8; 
+        border-radius: .5em;	
+        margin: .25em; 
+    }  
+
+    nav ul a:link {
+    color: #fff;
+    }
+    nav ul  a:visited {
+    color: #fff;
+    }
+    nav ul a:focus {
+	    color:#FC6
+	    border-color: #fff; 
+    }
+    nav ul a:hover, nav ul a.current {
+        color: rgb(43, 38, 56);
+	     border-color: #fff; 
+   }
+     nav ul a:active {
+	color:#F00;
+   }
+
+    /*section.courses styles*/
+    section.courses{
+        float: left;
+        width: 659px;
+        border-right: 1px solid #eeeeee;
+
+    } 
+    article{
+        clear: both;
+        overflow: auto;
+        width: 100%;
+    }
+    hgroup{
+        margin-top: 40px;
+    }
+    figure{
+        float: left;
+        width: 290px;
+        height: 220px;
+        padding: 5px;
+        margin: 20px;
+        border: 1px solid #eeeeee;
+        overflow: hidden;
+        position: relative;
+    }
+    figure img{
+        width: 280px;
+        height: 200px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+	-webkit-transition: -webkit-transform .3s ease-in-out; 
+	-moz-transition: -moz-transform .3s ease-in-out; 
+	-o-transition: -o-transform .3s ease-in-out; 
+	-ms-transition: -ms-transform .3s ease-in-out; 
+	transition: transform .3s ease-in-out; 
+    }
+    figure a:hover .img{
+        box-shadow: 6px 6px 6px rgba(0,0,0,.3);
+    }
+    figure a:hover .img1, figure a:focus .img1{
+        -webkit-transform: scale(1.5) rotate(5deg);
+	-moz-transform: scale(1.5) rotate(5deg);
+	-o-transform: scale(1.5) rotate(5deg);
+	-ms-transform: scale(1.5) rotate(5deg);
+	transform: scale(1.5) rotate(5deg);
+    }
+    figure a:hover .img2, figure a:focus .img2{
+        -webkit-transform: scale(1.5) rotate(5deg);
+	-moz-transform: scale(1.5) rotate(5deg);
+	-o-transform: scale(1.5) rotate(5deg);
+	-ms-transform: scale(1.5) rotate(5deg);
+	transform: scale(1.5) rotate(5deg);
+    }
+    
+    figcaption{
+        font-size: 90%;
+        text-align: left;
+        position: absolute;
+        top: 90%;
+        left: 2%;
+        padding-left: 20px;
+        background: url(images/icon.png) no-repeat left center;
+    }
+    /* aside styles*/
+    aside{
+        width: 230px;
+        float: left;
+        padding: 0px 0px 0px 20px;
+
+    }
+    aside section a{
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #eeeeee;
+    }
+    aside section a:hover{
+        color: #985d6a;
+        background-color: #efefef;
+    }
+    h1,h2,h3{
+        font-weight: normal;
+    }
+    h2{
+        margin: 10px 0px 5px 0px;
+        padding: 0px;
+    }
+    h3{
+        margin: 0px 0px 10px 0px;
+        color: #de6581;
+    }
+    aside h2{
+        padding: 30px 0px 10px 0px;
+        color: #de6581;
+    }
+
+
+    /*footer styles*/
+    footer{
+        
+        padding: 7px 0px 0px 20px;
+    
+    }
+    footer p{
+        padding: 5px;
+        font-size: 80%;
+        margin: .5em auto;
+        text-align: center;
+
+    }
+
+    </style>
+-->
+<link rel="stylesheet"  href="style2-rwd.css">
+<!--[if (lt IE 9) & (! IEMobile)]>
+  <link rel="stylesheet" href="ie-layout.css">
+<![endif]-->
+   </head>
+    <body>
+            <header>
+            <h1 id="logo">Yoko's Kitchen</h1>
+             <nav>
+              <ul>
+                <li><a href="" class="current">home</a></li>
+                <li><a href="">classes</a></li>
+                <li><a href="">catering</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+              </ul>
+             </nav>
+            </header>
+     <div id="content">
+        <section class="courses">
+              <article class="article1">
+                <figure>
+                  <a href="#"><img class="img1"  src="images/bok-choi.jpg" alt="Bok Choi" /></a>
+                 <figcaption>Bok Choi</figcaption>
+                </figure>
+                <hgroup>
+                  <h2>Japanese Vegetarian</h2>
+                  <h3>Five week course in London</h3>
+                </hgroup>
+                <p>A five week introduction to traditional Japanese vegetarian meals,
+                    teaching you a selection of rice and noodle dishes.</p>
+             </article>
+             <article class="article2">
+                <figure>
+                    <a href="#"> <img class="img2" src="images/teriyaki.jpg" alt="Teriyaki sauce" /></a>
+                    <figcaption>Teriyaki Sauce</figcaption>
+                </figure>
+
+                <hgroup>
+                    <h2>Sauces Masterclass</h2>
+                    <h3>One day workshop</h3>
+                </hgroup>
+                <p>An intensive one-day course looking at how to create the most delicious
+                    sauces for use in a range of Japanese cookery.</p>
+              </article>
+         </section>
+         <aside>
+            <section class="popular-recipes">
+                <h2>Popular Recipes</h2>
+                <a href="">Yakitori (grilled chicken)</a>
+                <a href="">Tsukune (minced chicken patties)</a>
+                <a href="">Okonomiyaki (savory pancakes)</a>
+                <a href="">Mizutaki (chicken stew)</a>
+            </section>
+            <section class="contact-details">
+                <h2>Contact</h2>
+                <p>Yoko's Kitchen<br />
+                    27 Redchurch Street<br />
+                    Shoreditch<br />
+                    London E2 7DP</p>
+                    </section>
+         </aside>
+     </div><!-- #content -->
+        <footer>
+          <p> &copy; 2020 MBRIANZ Productions tweaks</p>
+        </footer>
+    
+    </body>
+</html>

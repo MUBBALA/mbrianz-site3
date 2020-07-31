@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*CSS Document*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    /* background gradient at top of page, from http://www.colorzilla.com/gradient-editor/ */
+    background: -moz-linear-gradient(top,  #ffa853 0%, #fdf9bd 2%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa853),color-stop(2%,#fdf9bd));
+    background: -webkit-linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+    background: -o-linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+    background: -ms-linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+    background: linear-gradient(top,  #ffa853 0%,#fdf9bd 2%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa853', endColorstr='#fdf9bd',GradientType=0 );
+    background-repeat: repeat-x;
+    background-color: #fdf9bd; /* Old browsers */
+    margin: 0;
+}
+
+figure img{
+    max-width: 100%;
+}
+
+/*link styles*/
+a {
+    color: #de6581;
+    text-decoration: none;
+}
+a:link{
+    color: #de6581 ;
+}
+a:visited{
+    color: #775c62;
+}
+a:hover,a:focus{
+    color: rgb(26, 71, 56) ;
+    background-color: rgb(129, 172, 158);
+}
+a:active{
+    color: rgb(173, 12, 12);
+}
+
+/*header section styles*/
+header{
+    height: 12%;
+    background-color: rgb(244, 217, 96, .6);
+    padding: .1em .2em;
+    
+}
+header h1{
+    text-shadow: rgb(122, 111, 111, .2) .2em .2em .2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    width: 18.5em;
+    
+}
+
+h1#logo{
+    background: url(images/logo3.png) no-repeat 0 -20px;
+    text-indent: 100%;
+    width: 300px;
+    height: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: cover;
+}
+
+nav,footer{
+    clear: both;
+    color: #fff;
+    background-color: #aeaca8;
+    height: 3em;
+}
+
+/*nav styles*/
+nav{
+    overflow: hidden;
+    margin: 0px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 30em;
+
+}
+nav ul li{
+    float: left;
+    text-transform: uppercase;
+    font-weight: normal;
+
+}
+nav ul li a { 	
+    display: block; 	
+    padding: .5em; 	
+    border: 1px solid #ba89a8; 
+    border-radius: .5em;	
+    margin: .2em; 
+}  
+
+nav ul a:link {
+color: #fff;
+}
+nav ul  a:visited {
+color: #fff;
+}
+nav ul a:focus {
+    color:#FC6
+    border-color: #fff; 
+}
+nav ul a:hover, nav ul a.current {
+    color: rgb(43, 38, 56);
+     border-color: #fff; 
+}
+ nav ul a:active {
+color:#F00;
+}
+
+/*section.courses styles*/
+section.courses{
+    background-color: #FFF;
+  line-height: 1.5em;
+  padding: .5em;
+  border: double #FFBC53;
+  overflow: hidden;
+  }
+
+section.courses h2{
+    font-size: 1.2em;
+  color: #ac267b;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+aside, article, section.courses,{
+    clear: left;
+}
+
+figure{
+    width: 290px;
+    height: 220px;
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid #eeeeee;
+    overflow: hidden;
+    position: relative;
+}
+figure img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+-webkit-transition: -webkit-transform .3s ease-in-out; 
+-moz-transition: -moz-transform .3s ease-in-out; 
+-o-transition: -o-transform .3s ease-in-out; 
+-ms-transition: -ms-transform .3s ease-in-out; 
+transition: transform .3s ease-in-out; 
+}
+figure a:hover .img{
+    box-shadow: 6px 6px 6px rgba(0,0,0,.3);
+}
+figure a:hover .img1, figure a:focus .img1{
+    -webkit-transform: scale(1.5) rotate(5deg);
+-moz-transform: scale(1.5) rotate(5deg);
+-o-transform: scale(1.5) rotate(5deg);
+-ms-transform: scale(1.5) rotate(5deg);
+transform: scale(1.5) rotate(5deg);
+}
+figure a:hover .img2, figure a:focus .img2{
+    -webkit-transform: scale(1.5) rotate(5deg);
+-moz-transform: scale(1.5) rotate(5deg);
+-o-transform: scale(1.5) rotate(5deg);
+-ms-transform: scale(1.5) rotate(5deg);
+transform: scale(1.5) rotate(5deg);
+}
+
+figcaption{
+    font-size: 90%;
+    text-align: left;
+    position: absolute;
+    top: 90%;
+    left: 2%;
+    padding-left: 20px;
+    background: url(images/icon.png) no-repeat left center;
+}
+
+
+h1,h2,h3{
+    font-weight: 500;
+}
+h2{
+    margin: 1em 0 .5em 0;
+    padding: 0px;
+}
+h3{
+    margin: 0 0 1em 0;
+    color: #de6581;
+}
+
+/*styles for aside area*/
+aside{
+    margin: 1em 2%;
+    padding: 0px 0px 0px 1em;
+
+}
+aside h2{
+    padding: 2em 0 1em 0;
+    color: #de6581;
+}
+aside section a{
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid #ddbdbd;
+}
+aside section a:hover{
+    color: #a76977;
+    background-color: #efefef;
+}
+aside section a:active{
+    color: rgb(182, 37, 37);
+}
+
+
+
+/*footer styles*/
+footer{
+        
+    padding: .5em 0 0 2em;
+
+}
+footer p{
+    padding: .5em;
+    font-size: 80%;
+    margin: .5em auto;
+    text-align: center;
+
+}
+
+/*media query styles for rwd >481pixels */
+
+@media screen and (min-width: 481px){
+
+    section.courses {
+         clear: both;
+         margin: 0 2%;
+
+
+    }
+    section.courses .article1, .article1{
+        float: left;
+        width: 20em;
+        margin: 0 2%;
+        padding: .2em;
+        
+    }
+    
+    aside{
+        margin: .5em auto;
+        text-align: center;
+        padding: .5em;
+    }
+    
+
+    /*styles for rwd >780px media query*/
+
+@media screen and (min-width: 780px){
+    section.courses{
+        float: left;
+        width: 68%;
+        margin: 0 2.5%;
+
+    }
+    /*
+    figure, aside, section.content{
+        outline: 1px dashed red;
+    }*/
+
+    section.courses .article1 figure{
+        float: left;
+        margin: 0 .5em 1em 0 ;
+        width: 18em;
+
+    }
+    
+    section.courses .article1{
+        float: left;
+        width: 20em;
+        margin: 0 2%;
+        padding: .2em;
+        
+    }
+    section.courses .article2{
+        float: left;
+        width: 20em;
+        margin: 0;
+        
+    }
+
+    aside{
+        float: left;
+        width: 20%;
+        margin: 0 2% 0 0;
+    }
+
+    section.courses .article1 figure{
+        float: left;
+        width: 15em;
+        margin: 0;
+    }
+    #content {
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+
+    footer{
+        clear: left;
+    }
+}
+
+
+ 
+
+

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*css document for internet explorer older versions*/
+section.courses {
+    clear: both;
+
+
+}
+section.courses{
+    float: left;
+    width: 68%;
+    margin: 0 2.5%;
+
+}
+
+aside{
+    float: left;
+    width: 20%;
+    margin: 0 2% 0 0;
+}
+section.courses .article1{
+    float: left;
+    width: 20em;
+    margin: 0 2%;
+    padding: .2em;
+    
+}
+section.courses .article2{
+    float: left;
+    width: 20em;
+    margin: 0;
+    
+}
+
+#content {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  footer{
+    clear: left;
+}
